@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!--INFORMATION-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body>
+    <!--CONTENEUR-->
+    <section id="bienvenue">
+      <!--EN TETE-->
+ <div class="burger-menu-button">
+          <div id="icon-burger"><i class="fa-solid fa-bars"></i></div>    
+   
+            </div>
+      <div class="conteneur">
+        <header>
+          GameOLD
+          <span id="slogan">L'encyclopédie numérique du jeux vidéo</span>
+
+  
+          </div>
+    
+          <div class="burger-menu">
+            <ul class="links">
+              <li><a href="index.html">Acceuil</a></li>
+              <li><a href="media.html">Media</a></li>
+              <li><a href="apropos.html">A Propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+    
+              <div class="divider"></div>
+    
+              <div class="button-burger-menu">
+                <a href="inscription.html" class="action-button pro">S'inscrire</a><br>
+                <a href="connexion.html" class="action-button">Se Connecter</a>
+              </div>
+            </ul>
+          </div>
+
+
+  </div>
+</div>
+
+
+        </header>
+      </div>
+    </section>
+
+    <!--CONTENU -->
+
+    <section class="contenue conteneur">
+      <section>
+        <h1>CONSOLE</h1>
+
+        <p id="top">Selectionner la console dont vou voulez des informations :</p>
+
+        <section id="flexbox-console">
+
+          
+                <div> <h2>Nintendo</h2>
+
+          <a href="" id="nes" class="console">  NES</a>
+
+          <a href="" id="snes" class="console">SUPER NINTENDO</a>
+
+          <a href="" id="n64" class="console">NINTENDO 64</a>
+        
+     
+
+          <a href="" id="gameboy" class="console">GAMEBOY</a>   
+        
+        </div>
+
+          <div><h2>Sony</h2>
+
+          <a href="" id="ps1" class="console">PLAYSTATION</a>
+
+          <a href="" id="ps2" class="console">PLAYSTATION 2</a>
+          
+          <a href="" id="ps3" class="console">PLAYSTATION 3</a></div>
+
+          <div><h2>Sega</h2>
+
+          <a href="" id="sega" class="console">SEGA GENESIS</a>   
+          <a href="" id="saturn" class="console">SATURN</a>
+          <a href="" id="dreamcast" class="console">DREAMCAST</a>
+        
+        </div>
+      
+
+          
+  
+    
+    
+              
+
+        </section>
+     
+
+      <!--EN VOIR PLUS-->
+      <div style="text-align: right; margin-top: 10px">
+        <a href="" style="display: inline-flex; align-items: center; color: grey;"
+          >En voir Plus<svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+            /></svg ></a>
+      </div>
+ </section>
+      <!--NAV-->
+      
+      
+      
+    </section>
+
+    <!--PIED-->
+
+    <footer>
+      
+      
+      <div class="conteneur" id="flexbox-foot">
+    <div id="">
+      
+      <img src="https://zeroaccessteamgeek.wordpress.com/wp-content/uploads/2019/07/manette-super-nintendo-render-png.png" alt="logo" style="width: 70px; display: block;">
+    Copyright 2024 GameOLD
+    
+    </div>
+    </div>
+    </footer>
+
+    <script>
+      const burgerMenuButton = document.querySelector(".burger-menu-button");
+      const burgerMenuButtonIcon = document.querySelector(
+        ".burger-menu-button i"
+      );
+      const burgerMenu = document.querySelector(".burger-menu");
+
+      burgerMenuButton.onclick = function () {
+        burgerMenu.classList.toggle("open");
+        const isOpen = burgerMenu.classList.contains("open");
+        burgerMenuButtonIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+
+
+  </body>
+</html>

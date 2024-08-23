@@ -1,0 +1,362 @@
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap'); /*Police d'écriture importé*/
+
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+* { 
+    
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 40px;
+}
+
+body {
+    margin: 0;  /*enlève les bordure des navigateur par défaut*/
+    font-family: "New Amsterdam";
+    background-color: #7E7E7E;
+    
+}
+
+
+a{
+  
+    text-decoration: none;
+    color: black;
+ 
+}
+
+a:hover {
+    color: #f10e0e;
+    transition: all 1s;
+}
+
+ ul {
+      margin: 5px 0;
+      list-style-type: none;
+      display: flex;
+      gap: 15px;
+      color: grey;
+    
+ }
+
+ .contenue {
+    padding: 10px;
+ }
+
+ h1 {
+    text-align: center;
+    font-size: 90px;
+    margin: 40px 0 10px;
+    color: #F0F0F0;
+    text-shadow: 0 0 5px rgb(226, 29, 29);
+ }
+
+
+ .conteneur {
+    width: 1500px;
+    margin: 0 auto;
+
+ }
+
+/*header*/
+
+header {
+    
+    
+    font-size: 100px;
+    color: #F0F0F0;
+    text-shadow: 0 0 5px rgb(226, 29, 29);
+   
+    
+}
+
+#bienvenue {
+
+    background-image: url("https://4kwallpapers.com/images/wallpapers/retro-gaming-room-1920x1080-16744.jpg");
+    background-size: 100%;
+    height: 620px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+}
+
+#slogan {
+    display: block;
+    font-size: 30px;
+}
+
+#top {
+    font-size: 50px;
+    text-align: center;
+}
+
+.console {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    min-height: 400px;
+    border: solid black 2px;
+    font-size: 40px;
+    color: rgb(228, 243, 11);
+    text-shadow: 0 0 30px rgb(8, 6, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 1s;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgba(49, 49, 49, 0.671);
+    margin: 20px;
+}
+.console:hover {
+
+    border: solid red 2px;
+}
+
+#nes {
+    background-image: url("https://i.pinimg.com/564x/d8/18/4f/d8184fa8337ef1559c70690353d71ab9.jpg") ;
+    
+   
+}
+
+#snes {
+    background-image: url("https://i.pinimg.com/564x/b5/bb/9a/b5bb9ac1ea0e5cfe3e1d0fd2c6cacbee.jpg") ;
+    
+  
+}
+
+#n64 {
+    background-image: url("https://i.pinimg.com/564x/76/10/9c/76109c14b431a3a388c623fcf5beb9d5.jpg") ;
+   
+}
+#gameboy {
+    background-image: url("https://i.pinimg.com/564x/96/1f/da/961fda81b3c04a12e5e70774f50e0a9d.jpg") ;
+   
+}
+
+
+#ps1 {
+    background-image: url("https://i.pinimg.com/564x/b2/3d/f6/b23df6c1251a4f4b5c8cd7b8e85f0b71.jpg") ;
+   
+}
+
+#ps2 {
+    background-image: url("https://i.pinimg.com/564x/14/dc/78/14dc78f11a1b636be93ee281f4db606b.jpg") ;
+   
+}
+#ps3 {
+    background-image: url("https://i.pinimg.com/564x/ad/98/64/ad9864827b288a98e9cceeedad437aca.jpg") ;
+   
+}
+
+#sega {
+    background-image: url("https://i.pinimg.com/564x/55/43/73/55437308cef75894e6ca367959457e1f.jpg") ;
+   
+}
+
+#saturn {
+    background-image: url("https://i.pinimg.com/564x/33/a5/b3/33a5b3eb46a3baaf9e64633b3051236f.jpg") ;
+   
+}
+
+#dreamcast {
+    background-image: url("https://i.pinimg.com/564x/b1/45/1d/b1451d0c1886e645841c592d8508d4a0.jpg") ;
+   
+}
+
+
+
+
+#flexbox-console h2 {
+
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 238, 0);
+    text-shadow: 0 0 5px rgb(226, 29, 29);
+
+}
+
+
+
+
+
+#flexbox-console {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*le premier chiffre est le nombre de colone */
+   
+}
+
+
+#logo{
+
+    width: 70px;
+    box-shadow: none;
+
+
+}
+/*footer*/
+
+#flexbox-foot {
+
+    display: flex;
+     align-items: center;
+      justify-content: space-between;
+}
+
+footer {
+   
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 30px;
+    background: left/270px url("https://i.pinimg.com/564x/f4/84/9b/f4849bce76f03d5bdcedb197600160fe.jpg"); /*la position du background et sa taille*/
+    
+}
+ /*Burger Menu*/
+
+.links {
+    display: flex;
+    flex-direction: column;
+    
+}
+#icon-burger i{
+    display: flex;
+    color: yellow;
+    float: right;
+    
+}
+
+
+
+ .burger-menu {
+    
+    height: 0px;
+    position: absolute;
+    left: 1rem;
+    top: 60px;
+    width: 300px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    overflow: hidden; 
+    transform: translateX(0);
+    transition: transform 1s ease;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.781);
+    padding-right:1rem;
+  }
+  
+
+.burger-menu a {
+    color: yellow;
+    margin: 1rem;
+}
+
+a:hover{
+    color: red;
+}
+  .burger-menu.open {
+    height: 350px;
+    transform: translateX(10px);
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+  
+  
+  
+  .divider {
+    height: 2px;
+    background-color: wheat;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+  
+
+
+
+  .button {
+    display: flex;
+    gap: 10px;
+  }
+  
+
+  .action-button:hover {
+    color: rgb(255, 1, 1);
+   
+  }
+
+  .conteneur .burger-menu-button {
+    color: #7E7E7E;
+  }
+
+
+
+/*responsive toujour mettre à la fin le code responsive le css lit de haut en bas*/
+
+/*1300 :notebook */
+
+@media all and (max-width : 1300px) {
+    .conteneur{
+        width: 800px;
+    }
+    #flexbox-console {
+        grid-template-columns: repeat(2 ,1fr);
+    }
+
+    #snes{
+        grid-column: auto;
+    }
+    #gameboy{
+        grid-column: 1/3;
+    }
+}
+
+/*768px tablette */
+
+@media all and (max-width : 800px){
+    .conteneur{
+        width: 500px;
+        
+    }
+    #flexbox-console {
+        grid-template-columns: 1fr;
+    }
+
+    #snes{
+        grid-row: auto;
+    }
+    #gameboy{
+        grid-column: auto;
+    }
+    #flexbox-foot{
+        flex-direction: column;
+    }
+    #logo-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+/* 480 px : smartphone */
+
+@media all and (max-width : 500px){
+    .conteneur {
+        width: 100%;
+    }
+    #bienvenue {
+        padding: 10px;
+    }
+
+
+}
