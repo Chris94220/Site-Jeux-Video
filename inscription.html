@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
 
   </head>
 
   <body>
-    <!--CONTENEUR-->
     <section id="bienvenue">
       <!--EN TETE-->
  <div class="burger-menu-button">
@@ -42,94 +42,104 @@
               </div>
             </ul>
           </div>
-
-
   </div>
 </div>
 
-
         </header>
-      </div>
     </section>
 
-    <!--CONTENU -->
 
-    <section class="contenue conteneur">
-      <section>
-        
-        <h1>CONSOLE</h1>
-
-        <p id="top">Selectionner la console dont vou voulez des informations :</p>
-
-        <section id="flexbox-console">
-
-          
-                <div> <h2>Nintendo</h2>
-
-          <a href="nes.html" id="nes" class="console">  NES</a>
-
-          <a href="" id="snes" class="console">SUPER NINTENDO</a>
-
-          <a href="" id="n64" class="console">NINTENDO 64</a>
-        
-     
-
-          <a href="" id="gameboy" class="console">GAMEBOY</a>   
-        
+    <!--CONTENU-->
+<div class="conteneur">
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Votre Nom</label>
+          <input type="text" class="form-control" id="nom" aria-describedby="nom">
+         
         </div>
 
-          <div><h2>Sony</h2>
-
-          <a href="" id="ps1" class="console">PLAYSTATION</a>
-
-          <a href="" id="ps2" class="console">PLAYSTATION 2</a>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Votre Prenom</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
           
-          <a href="" id="ps3" class="console">PLAYSTATION 3</a></div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Votre adresse MAIL</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Votre numéro de téléphone</label>
+            <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
 
-          <div><h2>Sega</h2>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Votre adresse</label>
+            <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
 
-          <a href="" id="sega" class="console">SEGA GENESIS</a>   
-
-          <a href="" id="saturn" class="console">SATURN</a>
-
-          <a href="" id="dreamcast" class="console">DREAMCAST</a>
+        <p>Etes vous ?</p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Un Homme
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Une Femme
+            </label>
+          </div>
+          <br>
+     
         
+      
+<p>comment vous nous avez connue ?</p>
+      <select class="form-select" aria-label="Default select example">
+        
+        <option selected>Faite votre choix</option>
+        <option value="1">Internet</option>
+        <option value="2">Bouche a oreille</option>
+        <option value="3">Réseau professionnel</option>
+      </select>
+      <br>
+<div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Accepter vous de recevoir des Newsletter?</label>
         </div>
-      
-
-          
-  
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+        <button type="reset" class="btn btn-primary">Annuler</button>
     
     
-              
+    </form>
+</div>
 
-        </section>
-     
-<!--EN VOIR PLUS--> 
-      <div id="envoir-plus">
-        <a>voir un peu plus <i class="fa-solid fa-arrow-right"></i> </a>
-         </div>
 
-      
-     
- </section>
-      
-      
-      
-      
-    </section>
+
+
+
+
+
+
+
+
+
+
+
     <!--PIED-->
 
-      
-    
+  
 
-      <footer>
+     <footer>
       
       
         <div class="conteneur" id="flexbox-foot">
       
-        
-          <a href="index.html"><img src="https://zeroaccessteamgeek.wordpress.com/wp-content/uploads/2019/07/manette-super-nintendo-render-png.png" alt="logo" style="width: 70px;"></a>  <p>2024 C.PEREIRA </p>
+       
+        <a href="index.html"><img src="https://zeroaccessteamgeek.wordpress.com/wp-content/uploads/2019/07/manette-super-nintendo-render-png.png" alt="logo" style="width: 70px;"></a>  <p>2024 C.PEREIRA </p>
      
       
   

@@ -51,6 +51,12 @@ h1 {
   margin: 0 auto; /* enleve tout les marges */
 }
 
+form {
+  font-size: 25px;
+  color: rgb(8, 6, 6);
+  margin: 1rem;
+}
+
 /*header*/
 
 header {
@@ -62,7 +68,7 @@ header {
 #bienvenue {
   background-image: url("https://4kwallpapers.com/images/wallpapers/retro-gaming-room-1920x1080-16744.jpg");
   background-size: 100%;
-  height: 620px;
+  height: 420px;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -77,7 +83,12 @@ header {
   font-size: 50px;
   text-align: center;
 }
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 
+}
 .console {
   background-size: cover;
   background-position: center;
@@ -162,17 +173,14 @@ header {
 
 .article
 {
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+   
   font-size: 25px;
 }
 
 .contenue-article{
 
-  display: flex;
-  padding: 1rem;
+   display: flex;
+   padding: 1rem;
   
 }
 
@@ -184,19 +192,16 @@ h2{
 .article img {
   border: solid black 2px;
   margin: 1rem;
+  
 }
 
 /*ARTICLE 1*/
 .art1{
   
   border: solid black 1px;
-  padding: 1rem;
   background-color: #CACACA;
-  
+  margin: 1rem;
 }
-
-
-
 
 
 
@@ -206,8 +211,8 @@ h2{
 .art2{
   
   border: solid black 1px;
-  padding: 1rem;
   background-color: #CACACA;
+  margin: 1rem;
   
 }
 
@@ -219,11 +224,8 @@ h2{
   border: solid black 1px;
   padding: 1rem;
   background-color: #CACACA;
-  
+  margin: 1rem;
 }
-
-
-
 
 
 /*footer*/
@@ -241,14 +243,14 @@ h2{
 footer {
   padding: 15px;
   margin-top: 40px;
-  font-size: 30px;
+  font-size: 20px;
   background-color: #CACACA;
 }
 
 .reseau a {
-  color: yellow;
-  margin: 2rem;
-  text-shadow: 0 0 5px rgb(226, 29, 29);
+  color: rgb(15, 15, 14);
+  margin: 1rem;
+  cursor: pointer;
 }
 /*Burger Menu*/
 
@@ -260,9 +262,11 @@ footer {
   display: flex;
   color: yellow;
   float: right;
-  height: 500px;
+  height: 400px;
   margin: 1rem;
   font-size: 64px;
+  position: fixed;
+  top: 0px;
 }
 
 .burger-menu {
@@ -277,12 +281,15 @@ footer {
   transform: translateX(0);
   transition: transform 1s ease;
   font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: rgba(0, 0, 0, 0.781); 
+  position: fixed;
+  
 }
 
 .burger-menu a {
   color: yellow;
   margin: 1rem;
+ 
 }
 
 a:hover {
@@ -326,16 +333,12 @@ a:hover {
   .conteneur {
     width: 800px;
   }
+
   #flexbox-console {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
   }
 
-  #snes {
-    grid-column: auto;
-  }
-  #gameboy {
-    grid-column: 1/3;
-  }
+  
 }
 
 /*768px tablette */
@@ -343,34 +346,42 @@ a:hover {
 @media all and (max-width: 800px) {
   .conteneur {
     width: 500px;
+
   }
   #flexbox-console {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
 
-  #snes {
-    grid-row: auto;
-  }
-  #gameboy {
-    grid-column: auto;
-  }
+ 
   #flexbox-foot {
     flex-direction: column;
   }
-  #logo-foot {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.contenue-article {
+  flex-direction: column;
 }
+
+.article {
+  flex-direction: column;
+}
+}
+
+
 
 /* 480 px : smartphone */
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 400px) {
   .conteneur {
-    width: 100%;
+    
+    width: 100px;
+   
+    
   }
   #bienvenue {
     padding: 10px;
+    
   }
+.article {
+  flex-direction: column;
+}
+
 }
