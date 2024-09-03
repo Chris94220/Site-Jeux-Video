@@ -322,7 +322,7 @@ a:hover {
   color: red;
 }
 .burger-menu.open {
-  height: 350px;
+  height: 450px;
   transform: translateX(10px);
   justify-content: space-between;
   text-align: center;
